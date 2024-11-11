@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        :root{
+            --cot:  red;
+            --not:green;
+            --get:20px;
+            --lot:0.7;
+            --pot:rgb(163, 163, 47);
+        }
+        .nav{
+            /* background-color: rgb(252, 0, 198); */
+            background-color: var(--cot);
+        }
+        .container{
+            /* background-color: rgb(224, 123, 202); */
+            background-color: var(--not);
+
+        }
+        ul{
+            display: flex;
+            /* padding: 30px; */
+        }
+        li{
+            /* padding: 10px; */
+            padding: var(--get);
+            /* opacity: 0.7; */
+            opacity: var(--lot);
+            list-style: none;
+            /* border: 2px solid blue; */
+            border: 2px solid var(--pot);
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="container">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae dolores sapiente nemo rerum quis eligendi.
+            Saepe praesentium dicta quisquam necessitatibus dolore possimus provident nesciunt, similique aliquid
+            placeat, eligendi neque tempore blanditiis totam, enim modi culpa voluptatibus quasi. Delectus, qui
+            laudantium?</p>
+    </div>
+</body>
+
+</html>

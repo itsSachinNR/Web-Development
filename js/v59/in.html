@@ -1,0 +1,73 @@
+<!--make a faulty calculator in which 
+add--sub
+sub--multy
+mult--div
+div--power
+ -->
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Input Example</title>
+</head>
+<body>
+    <h2>Enter two numbers:</h2>
+    <input type="number" id="num1" placeholder="First number">
+    <input type="number" id="num2" placeholder="Second number">
+    <button onclick="calculateSum()">Calculate Sum</button>
+    <button onclick="calculatesub()">Calculate substraction</button>
+    <button onclick="calculatemul()">Calculate multiplication</button>
+    <button onclick="calculatediv()">Calculate division</button>
+
+    <h3 id="result"></h3>
+
+    <script>
+        function calculateSum() {
+            // Get the values of the inputs
+            var num1 = parseFloat(document.getElementById('num1').value);
+            var num2 = parseFloat(document.getElementById('num2').value);
+
+            // Calculate the sum
+            var sum = num1 - num2;
+
+            // Display the result
+            document.getElementById('result').innerText = "The sum is: " + sum;
+        }
+        function calculatesub() {
+            // Get the values of the inputs
+            var num1 = parseFloat(document.getElementById('num1').value);
+            var num2 = parseFloat(document.getElementById('num2').value);
+
+            // Calculate the sum
+            var sum = num1 * num2;
+
+            // Display the result
+            document.getElementById('result').innerText = "The sub is: " + sum;
+        }
+        function calculatemul() {
+            // Get the values of the inputs
+            var num1 = parseFloat(document.getElementById('num1').value);
+            var num2 = parseFloat(document.getElementById('num2').value);
+
+            // Calculate the sum
+            var sum = num1 / num2;
+
+            // Display the result
+            document.getElementById('result').innerText = "The multiplication is: " + sum;
+        }
+        function calculatediv() {
+            // Get the values of the inputs
+            var num1 = parseFloat(document.getElementById('num1').value);
+            var num2 = parseFloat(document.getElementById('num2').value);
+
+            // Calculate the sum
+            var sum = num1 ** num2;
+
+            // Display the result
+            document.getElementById('result').innerText = "The division is: " + sum;
+        }
+    </script>
+</body>
+</html>

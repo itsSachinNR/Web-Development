@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>more selectors</title>
+    <style>
+        .box:first-child {
+            /* background-color: red; */
+        }
+
+        .box::first-line {
+            color: blue;
+        }
+
+        .boxes * {
+            color: rgb(95, 158, 95);
+            /* border: 2px solid black; */
+        }
+
+        [data-color="primary"] {
+            /* padding-bottom: 45px; */
+        }
+
+        .box:nth-child(odd) {
+            background-color: red;
+        }
+
+        .boxes::before {
+            content: " hello this sachin";
+            color: aqua;
+        }
+
+        .boxes::after {
+            content: "byeeeeee";
+            color: rgb(255, 0, 238);
+        }
+
+        .box::first-letter {
+            color: rgb(212, 255, 0);
+            font-size: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <!-- <div class="box">hey this sachin Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate veritatis eveniet eligendi quaerat ratione, accusantium perferendis aliquam, exercitationem consequuntur illo nihil provident molestiae, tempore nam dolor laboriosam maiores doloremque enim.</div> -->
+        <div class="box">hey i'm sachin</div>
+        <div data-color="primary" class="box">hey this sachin</div>
+        <div class="box">hey this sachin</div>
+        <input type="text" placeholder="this is sachin nr">
+    </div>
+</body>
+
+</html>
